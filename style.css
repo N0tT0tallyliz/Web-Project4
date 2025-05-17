@@ -6,8 +6,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
+  .main-title {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black to improve contrast */
+    display: inline-block; /* Keeps your title centered */
+    border-radius: 8px;
 .nawiihaha {
     font-size: 100px;
     color:white;
