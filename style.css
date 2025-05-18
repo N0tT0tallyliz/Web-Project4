@@ -7,11 +7,6 @@
     align-items: center;
     text-align: center;
 }
-  .main-title {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black to improve contrast */
-    display: inline-block; /* Keeps your title centered */
-    border-radius: 8px;
 .nawiihaha {
     font-size: 100px;
     color:white;
@@ -30,6 +25,86 @@ body {
   background-position: center;
   color: #F5EEDD;
   line-height: 1.6;
+  }
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(220, 224, 217, 0.9);
+  border-radius: 8px;
+  color: #1C1C1C;
+}
+
+.intro h2 {
+  color: #854836;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ====== HOUSING/CULTURAL SECTIONS ====== */
+.housing {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.Cultural-more {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  width: 45%;
+  min-width: 300px;
+  margin: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.Cultural-more h3 {
+  color: #347928;
+  font-size: 1.5rem;
+}
+
+/* ====== VIDEO SECTION ====== */
+.Video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.Video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #854836;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* ====== RESPONSIVE ADJUSTMENTS ====== */
+@media (max-width: 768px) {
+  .nawiihaha {
+    font-size: 3.5rem;
+  }
+  
+  .flex-container > div {
+    font-size: 20px;
+    padding: 8px 15px;
+  }
+  
+  .Cultural-more {
+    width: 100%;
   }
   .content {
     font-size: 15px;
