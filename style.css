@@ -23,9 +23,13 @@
     text-transform: uppercase
 }
 body {
-  font-family:;
-  font-size: 17px;
-    color: #232121f6;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('../Images/nawii-plan_img2.png');
+  background-size: cover;
+  background-position: center;
+  color: #F5EEDD;
+  line-height: 1.6;
   }
   .content {
     font-size: 15px;
