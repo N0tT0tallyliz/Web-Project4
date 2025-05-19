@@ -26,30 +26,20 @@ flex-container {
 .main-title {
     position: relative;
     height: 60vh;
-    background: url("your-background-image.jpg") no-repeat center center/cover;
+    background: url("Images/nawiii plan img.png") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .nawiihaha {
-    font-size: 100px;
-    color:#f5f5dc;
-    text-shadow: 3px 3px 5px #347928;
+    letter-spacing: 2px;           
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     font-family: 'Arial Black', sans-serif;
     margin: 0;
-    padding: 0;
-    letter-spacing: 2px;           
-    text-transform: uppercase
 }
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-image: url('../Images/nawii-plan_img2.png');
-  background-size: cover;
-  background-position: center;
-  color: #F5EEDD;
-  line-height: 1.6;
-  }
 .container {
   max-width: 1000px;
   margin: 30px auto;
