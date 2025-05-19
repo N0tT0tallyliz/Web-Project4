@@ -1,3 +1,28 @@
+flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: #33658A;
+    padding: 0;               /* Remove padding */
+    margin: 0;                /* Remove default margin */
+    height: 60px;             /* Set a fixed height */
+}
+.flex-container > div {
+    background-color: #DCE0D9;
+    margin: 5px 10px;         /* Adjust spacing */
+    padding: 10px 20px;       /* Smaller padding for tighter fit */
+    font-size: 20px;
+    color: #22577A;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.flex-container > div:hover {
+    background-color: #C7F9CC;
+    transform: scale(1.05);   /* Adds subtle zoom on hover */
+}
 .main-title {
     position: relative;
     height: 60vh;
