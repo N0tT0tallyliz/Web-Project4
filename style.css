@@ -5,26 +5,30 @@ flex-container {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background-color: #33658A;
-    padding: 0;               /* Remove padding */
-    margin: 0;                /* Remove default margin */
-    height: 60px;             /* Set a fixed height */
-    border:9px solid #0061b8;
+    background-color: ##5A7C8A;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 .flex-container > div {
     background-color: #DCE0D9;
-    margin: 0px 10px;         /* Adjust spacing */
-    padding: 10px 20px;       /* Smaller padding for tighter fit */
-    font-size: 20px;
-    color: #22577A;
-    border-radius: 8px;
+    margin: 0px 22px;         /* Adjust spacing */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-.flex-container > div:hover {
-    background-color: #C7F9CC;
-    transform: scale(1.05);   /* Adds subtle zoom on hover */
-    color:#a4d4ff;
+.flex-container a {
+    text-decoration: none;
+    color: #E6EAE7;            /* soft white-stone from buildings */
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.flex-container a:hover {
+  background-color: #4A3F36;  /* rich brown from image shadows */
+  color: #FFFFFF;
 }
 .main-title {
     position: relative;
