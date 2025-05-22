@@ -1,28 +1,32 @@
+/*I wanted to use flexbox to do the nav bar instead of using the normal code for navbar and i used some of the properties of flexbox like justify content and more*/
 flex-container {
     display: flex;
     flex-direction:row;
+    /*To space the contents  evenly around there is space around the margin*/
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
     background-color: ##5A7C8A;
-    position: fixed;
+    position: fixed; /*to make sure the navbar stays up*/
     top: 0;
     width: 100%;
     z-index: 1000;
-   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);/*added some shadow around the box for like depth*/
 }
+ /* These are the boxes inside the navbar */
 .flex-container > div {
     background-color: #DCE0D9;
-    margin: 0px 22px;         /* Adjust spacing */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0px 22px;         /* To adjust the spacing */
+    transition: background-color 0.3s ease, transform 0.3s ease; /*So it could be smooth when hovering*/
 }
+    /*the links inside the navbar */*/
 .flex-container a {
-    text-decoration: none;
-    color: #E6EAE7;            /* soft white-stone from buildings */
+    text-decoration: none;/**so there won't be underlines from the links /
+    color: #E6EAE7;            /* Used this color to match some of the buildings */
     font-weight: 600;
     font-size: 18px;
     padding: 8px 14px;
-    border-radius: 8px;
+    border-radius: 8px; /*to make the border more round*/
     transition: all 0.3s ease;
 }
 .flex-container a:hover {
@@ -46,6 +50,17 @@ flex-container {
     font-family: 'Arial Black', sans-serif;
     margin: 0;
 }
+ .animate{
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+  @keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 .container {
   max-width: 1000px;
   margin: 30px auto;
@@ -60,61 +75,7 @@ flex-container {
   text-align: center;
   font-size: 2rem;
 }
-
-/* ====== HOUSING/CULTURAL SECTIONS ====== */
-.housing {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 40px 0;
-}
-
-.Cultural-more {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 8px;
-  width: 45%;
-  min-width: 300px;
-  margin: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.Cultural-more h3 {
-  color: #347928;
-  font-size: 1.5rem;
-}
-
-/* ====== VIDEO SECTION ====== */
-.Video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  margin: 30px auto;
-  max-width: 800px;
-}
-body {
-    font-size: 1.1rem; /* Slightly larger text */
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: #854836;
-}
-.Video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 8px;
-}
-
+ .
 /* ====== FOOTER ====== */
 footer {
   background-color: #854836;
