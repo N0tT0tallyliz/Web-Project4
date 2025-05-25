@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naawi-Oodena | Map</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-image: url("Images/nawiii plan img.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Rubik Mono One', sans-serif;
+    }
+
+    /* Navigation Bar using Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #5A7C8A;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .flex-container > div {
+      margin: 0 22px;
+    }
+
+    .flex-container a {
+      text-decoration: none;
+      color: #E6EAE7;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .flex-container a:hover {
+      background-color: #4A3F36;
+      color: #FFFFFF;
+    }
+
+    .main-title {
+      margin-top: 100px;
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nawiihaha {
+      font-size: 60px;
+      color: white;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .nawiihaha {
+        font-size: 40px;
+      }
+
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="flex-container">
+      <div><a href="index.html">HOME</a></div>
+      <div><a href="culture.html">CULTURE</a></div>
+      <div><a href="Map.html">MAP</a></div>
+      <div><a href="About.html">ABOUT US</a></div>
+      <div><a href="contact.html">CONTACT US</a></div>
+    </div>
+  </header>
+
+  <div class="main-title">
+    <h3 class="nawiihaha animate">MAP LOCATION</h3>
+  </div>
+
+  <div class="container">
+    <h2 style="text-align:center; color:#4A3F36;">Where is Naawi-Oodena?</h2>
+    <p style="text-align:center;">Use the interactive map below to explore the location of Naawi-Oodena and learn more about its area and surroundings.</p>
+
+    <!-- Google Map Embed (you can replace the src link with your real map location) -->
+    <iframe class="map-container"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.2975574092897!2d-97.13266388444489!3d49.8997549793987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715afe4e309f%3A0x77c7f5baf9a6499a!2sNaawi-Oodena!5e0!3m2!1sen!2sca!4v1716688888888!5m2!1sen!2sca"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</body>
+</html>
