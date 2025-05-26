@@ -1,4 +1,11 @@
 /*This is for the big title at the center i used some flexbox properties */
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Roboto&display=swap');
+  h1, h2, h3 {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+   body, p {
+  font-family: 'Roboto', sans-serif;
+}
 .main-title {
     position: relative;
     height: 60vh;
