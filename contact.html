@@ -7,12 +7,23 @@
    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <body>
+  <style>
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1; /* put it behind everything */
+    }
+  </style>
   <!-- ======= Navigation Bar ======= -->
   <div class="flex-container">
             <div><a href="index.html">HOME</a></div>
             <div><a href="culture.html">CULTURE</a></div>
             <div><a href="Map2.html">MAP</a></div>
-            <div><a href="About.html">ABOUT US</a></div>
+            <div><a href="about.html">ABOUT US</a></div>
             <div><a href="contact.html">CONTACT US</a></div>
         </div>
   <!-- ======= Page Banner ======= -->
@@ -38,16 +49,21 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
-
+    <video autoplay muted loop class="video-bg">
+    <source src="Videos/naawi-background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 <!--My footer-->
   <footer>
-    &copy; 2025 Naawi-Oodena Project — All Rights Reserved.
+    <p>Email: info@naawi.com</p>
+    <p>Phone: (204) 123-4567</p>
+    <p>Location: Winnipeg, MB</p> 
+    <p>2025 Naawi-Oodena Project — All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>
 
-</head>
+
 <body>
     
 </body>
