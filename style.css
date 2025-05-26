@@ -1,11 +1,13 @@
-/*This is for the big title at the center i used some flexbox properties */
- @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Roboto&display=swap');
+/*Used a google font Rubik-Mono with san serif which according to research it is the most font for readability but not ideal for the body so used roboto for the 
+body which is clear and ideal for the body.. To add this together i did the rubik for the heads and the roboto for the biody and paragraph*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Roboto&display=swap');
   h1, h2, h3 {
   font-family: 'Rubik Mono One', sans-serif;
 }
    body, p {
   font-family: 'Roboto', sans-serif;
 }
+/*This is for the big title at the center i used some flexbox properties */
 .main-title {
     position: relative;
     height: 60vh;
@@ -19,7 +21,7 @@
     text-transform: uppercase;
     font-size: 80px;
     color: white;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);i used roboto for the body 
     font-family: 'Arial Black', sans-serif;
     margin: 0;
 }
@@ -48,6 +50,14 @@
   text-align: center;
   font-size: 2rem;
 }
+        /* Style for eagle image */
+        .eagle {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+            border: 4px solid #347928;
+            border-radius: 12px;
+        }
  .
 /* ====== FOOTER ====== */
 footer {
