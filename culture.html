@@ -6,11 +6,12 @@
     <title>Culture</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Page-specific enhancements */
+        /* Added a gradient because why not, and used a picture of indigenous people wearing that cultural clothes so i choose dthis to represent That Culture.*/
         .cultural-hero {
             background: linear-gradient(rgba(46, 82, 102, 0.8), rgba(0, 0, 0, 0.8)), 
                         url('Images/culture.jpg') center/cover no-repeat;
         }
+        /* The class"teach" designs for Heading 3*/
         .teach{
             background-color: rgba(133, 72, 54, 0.1);
             border-radius: 50%;
@@ -18,11 +19,14 @@
             margin: 40px auto;
             max-width: 600px;
             border: 3px solid #347928;
+            text-align:center;
+            color:#854836
         }
     </style>
 </head>
 <body>
     <header>
+        /*Added this for screenreaders, so they can know which section is for, so they its the main menu.Which is good for accesibility*/
         <nav aria-label="Main navigation">
             <div class="flex-container">
             <div><a href="index.html">HOME</a></div>
@@ -32,20 +36,20 @@
             <div><a href="contact.html">CONTACT US</a></div>
         </div>
         </nav>
-        <div class="main-title cultural-hero">
-            <h1 class="nawiihaha">MINO-BIMAADIZIWIN</h1>
-            <p class="subtitle">"The Good Life" in Anishinaabemowin</p>
+        <div class="main-titleculture">
+            <h1 class="nawiihaha">CULTURE&EDUCATION</h1>
+            <p class="subtitle">"MINO-BIMAADIZIWIN</p>
         </div>
     </header>
     <body>
     <main>
+        <!--Research work-->
         <section class="content-section">
             <div class="container">
                 <h2>Honoring Indigenous Knowledge</h2>
-                <p>Naawi-Oodena's Cultural Campus weaves traditional teachings with modern education through:</p>
-                
+                <p>Naawi-Oodena's Cultural Campus has traditional teachings with today's education.</p>
                 <div class="teach">
-                    <h3 style="text-align:center;color:#854836;">Sacred Teachings</h3>
+                    <h3>Sacred Teachings</h3>
                     <ul>
                         <li>Seven Grandfather Teachings workshops</li>
                         <li>Seasonal ceremonies open to all community members</li>
@@ -54,10 +58,10 @@
                 </div>
             </div>
         </section>
-
+        <!--Language research-->
         <section class="content-section" style="background-color:rgba(52, 121, 40, 0.1);">
             <div class="container">
-                <h2>Language Revitalization</h2>
+                <h2>Language And Culture</h2>
                 <div class="Cards">
                     <div class="Cultural-more">
                         <h3>Anishinaabemowin Classes</h3>
@@ -70,44 +74,48 @@
                 </div>
             </div>
         </section>
-
         <section class="content-section">
             <div class="container">
                 <h2>Cultural Spaces</h2>
+                <!--Another youtube video to expand more on the cultural aspects -->
                 <div class="video-section">
                     <div class="Video">
-                        <iframe src="Images/131615-750742396_small.mp4" 
-                            title="Virtual Tour of Naawi-Oodena Cultural Center" 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HqGSRUjhscs?si=zCOJvllSxQCLEYXW" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                            title="Resources of Naawi-Oodena Cultural Center" 
                             allowfullscreen>
-                        </iframe>
+                    </iframe>
                     </div>
-                    <p>Explore the Medicine Garden, Storytelling Amphitheater, and Indigenous Art Gallery.</p>
+                    <p>Explore the Medicine Garden, Indigenous Art Gallery and more.</p>
                 </div>
             </div>
         </section>
     </main>
      <section class="content-section" style="background-color: rgba(255, 255, 255, 0.9);">
+         <!--Community features research-->
             <div class="container">
                 <h2>More Community Features</h2>
                 <p><strong>Housing Types:</strong> Single-family homes and multi-unit buildings.</p>
                 <p><strong>Public/Cultural Spaces:</strong> Community gathering space, cultural centre, and public plaza.</p>
                 <p><strong>Recreation:</strong> Sports fields, walking trails, and playgrounds.</p>
-                <p><strong>Indigenous Design:</strong> Language and culture are shown through names, signs, and art.</p>
-
-                <img src="Images/eagle.jpg" alt="Eagle Symbol" class="eagle-image">
+                <p><strong>Indigenous Design:</strong> Language and culture are shown through names, signs like an eagle,Turtle and art.</p>
+                <!--Added an eagle img to add more on when they say indigenous designs-->
+                <img src="Images/Eagle.jpg" alt="Eagle Symbol with red and black stripes representing thre hope for indigenous people" class="eagle-image">
                 <p style="text-align:center;">The eagle is a powerful symbol in Indigenous culture, representing strength, leadership, and vision.</p>
             </div>
         </section>
-
         <section class="content-section">
             <div class="container">
-                <h2>History of the Land</h2>
+                <!--More info on the birth of the land-->
+                <h2>Where This Land Came From</h2>
                 <p>This land was once Kapyong Barracks, a military base closed in 2004. Treaty 1 Nations fought for over 15 years to reclaim it. In 2019, they won the right to lead its future. This victory shows how First Nations can take back land and lead big projects that honor culture and people.</p>
             </div>
         </section>
     </main>
     <footer>
+        <!--I wanted to add like in the end like respects in the footer got the idea from https://www.clc-sic.ca/real-estate/naawi-oodena-->
         <p>&copy; 2023 Naawi-Oodena | Treaty One Nation</p>
-        <p>Website honors Treaty 1 Territory and the Anishinaabe, Cree, Oji-Cree, Dakota, and Dene Peoples.</p>
+        <p>This Website respects Treaty 1 Territory and the Anishinaabe, Cree, Oji-Cree and more.</p>
     </body>
     </html>
