@@ -7,62 +7,164 @@
     <link rel="stylesheet" href="style.css">
     <style>
             /*I wanted to use flexbox to do the nav bar instead of using the normal code for navbar and i used some of the properties of flexbox like justify content and more*/
-.flex-container {
-    display: flex;
-    /*To space the contents  evenly around there is space around the margin*/
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    background-color: ##5A7C8A;
-    position: fixed; /*to make sure the navbar stays up*/
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);/*added some shadow around the box for like depth*/
-}
- /* These are the boxes inside the navbar */
-.flex-container > div {
-    margin: 0px 22px;         /* To adjust the spacing */
-}
-    /*the links inside the navbar*/
-    .flex-container a {
-    text-decoration: none; /* so there won't be underlines from the links */
-    color: #84AE92;   /* Used this color to match some of the buildings */
-    font-weight: 600;
-    font-size: 18px;
-    padding: 8px 14px;
-    border-radius: 8px; /* to make the border more round */
-    transition: all 0.3s ease;/*So it could be smooth when hovering*/
-}
-}
-  .flex-container a:hover {
-     background-color: #4A3F36;  /* rich brown from image shadows */
-      color: #FFFFFF;
-}
-        /*The body has a background of nawii oodena */
-          body {
+  .flex-container {
+            display: flex;
+            justify-content: space-between; /* better layout split */
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #5A7C8A;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #84AE92;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #4A3F36;
+            color: #FFFFFF;
+        }
+
+        .nav-extras {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .nav-extras input[type="text"] {
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: none;
+            font-size: 14px;
+        }
+
+        .nav-extras input[type="email"] {
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: none;
+            font-size: 14px;
+        }
+
+        .nav-extras button {
+            background-color: #347928;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .nav-extras button:hover {
+            background-color: #285d1e;
+        }
+
+        /* HERO SECTION */
+        .cultural-hero {
+            background: linear-gradient(rgba(46, 82, 102, 0.8), rgba(0, 0, 0, 0.8)), 
+                        url('Images/culture.jpg') center/cover no-repeat;
+            padding-top: 80px;
+        }
+
+        /* BODY */
+        body {
             background-image: url("Images/nawiii plan img.png");
-            background-repeat: no-repeat;    /* So, it won't repeat */
-            background-position: center;     /* Centered the image */
-            height: 50vh; /*made it half of the page so it wont cover everything*/
-            background-size: cover;/*so it would cover everything*/
-            background-color:alice-blue;
-            font-size:18px;
-            color:#DCE0D9;
-      }
-        </style>
-    </head>
-     <body>
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: aliceblue;
+            font-size: 18px;
+            color: #DCE0D9;
+            margin: 0;
+            padding-top: 80px; /* space for fixed navbar */
+        }
+
+        .teaching-circle {
+            background-color: rgba(133, 72, 54, 0.1);
+            border-radius: 50%;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 600px;
+            border: 3px solid #347928;
+        }
+
+        .eagle-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+            border: 4px solid #347928;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
     <header>
-        <!--my links for other webpages-->
-        <div class="flex-container">
-            <div><a href="index.html">HOME</a></div>
-            <div><a href="culture.html">CULTURE&EDUCATION</a></div>
-            <div><a href="Map2.html">MAP</a></div>
-            <div><a href="about.html">ABOUT US</a></div>
-            <div><a href="contact.html">CONTACT US</a></div>
-        </div>
+        <nav aria-label="Main navigation">
+            <!-- Flex container with site links and extras -->
+            <div class="flex-container">
+                <!-- Navigation links -->
+                <div class="nav-links">
+                    <a href="index.html">HOME</a>
+                    <a href="culture.html">CULTURE & EDUCATION</a>
+                    <a href="Map2.html">MAP</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="contact.html">CONTACT US</a>
+                </div>
+                <!-- Extras: search + email (pretend sign-up) -->
+                <div class="nav-extras">
+                    <input type="text" placeholder="Search...">
+                    <input type="email" placeholder="Enter email">
+                    <button>Sign Up</button>
+                </div>
+            </div>
     </header>
+        <div class="main-title">
+            <!--I used my class "nawiihaha" for my main title and added animate to know which one i am animating-->
+            <h3 class="nawiihaha animate">NAAWI OODENA</h3>
+        </div>
+           <div class="container">
+               <!--My Nawii Oodena Research i joined my answers stogether to make a pargraph sentence to introduce the website-->
+               <p>Welcome to our site!</p>
+                <h2>About Naawi-Oodena</h2>
+               <p>Naawi-Oodena is a special project led by Treaty One Nations and Canada Lands Company. The land was once a military base called Kapyong Barracks. Now, it will become a new place for homes, parks, and culture. 
+                The name means "heart of the community" in the Anishinaabe language.</p> <p>The area is 160 acres. Treaty One owns most of it. This is a big win for Indigenous people. The plan includes trails, gathering spots, and places to play.
+                Streets and art will show Indigenous culture and languages. It mixes modern city ideas with First Nations traditions.</p>
+          </div>
+         <!--The youtube video to more resarch on nawii oodena since the rubric said there must be a vid so i added a vid -->
+          <div class="video-container">
+              <p> Want to learn more about Nawii Oodena CLICK THIS VIDEO!!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Nv0gmzD47Dc?si=yZ5t_OPVF-XtrTac" title="YouTube video player" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+            <div class="content"> 
+            </div>
+          </div>
+         <!--The footer, wanted to add like my webpage links to it in case like they don't want to go back up, the important ones though and added a clue to
+         notify the person that this is a website for grade 9-12 students at the footer.-->
+         <footer style="background-color: #5A7C8A; color:aliceblue; text-align: center; padding: 15px 0; margin-top: 40px;">
+              <p>&copy; 2025 Naawi-Oodena Project | Created by The Nawii Odena Project</p>
+               <p>
+                  <a href="about.html">About</a>  
+                  <a href="contact.html">Contact</a>
+              </p>
+              <p>A Site for HighSchoolStudents To learn more about Nawii Oodena</p>
+         </footer>
+     </html>
+
         <div class="main-title">
             <!--I used my class "nawiihaha" for my main title and added animate to know which one i am animating-->
             <h3 class="nawiihaha animate">NAAWI OODENA</h3>
