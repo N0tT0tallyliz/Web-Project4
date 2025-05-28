@@ -109,15 +109,16 @@ body which is clear and ideal for the body.. To add this together i did the rubi
     opacity: 1;
     transform: translateY(0);
   }
-.container {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: rgba(220, 224, 217, 0.9);
-  border-radius: 8px;
-  color: #1C1C1C;
-}
-
+ .container {
+      padding: 30px;
+      background-color: brown;
+      margin: 30px;
+      border-radius: 12px;
+    }
+    .video-container {
+      text-align: center;
+      margin-top: 20px;
+    }
 .intro h2 {
   color: #854836;
   text-align: center;
@@ -184,13 +185,4 @@ footer {
 .contact-form button:hover {
   background-color: #4A3F36; /* dark brown hover */
 }
-  .container {
-      padding: 30px;
-      background-color: rgba(255, 255, 255, 0.8);
-      margin: 30px;
-      border-radius: 12px;
-    }
-    .video-container {
-      text-align: center;
-      margin-top: 20px;
-    }
+
