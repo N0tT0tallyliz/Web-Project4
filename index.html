@@ -9,7 +9,6 @@
             /*I wanted to use flexbox to do the nav bar instead of using the normal code for navbar and i used some of the properties of flexbox like justify content and more*/
 .flex-container {
     display: flex;
-    flex-direction:row;
     /*To space the contents  evenly around there is space around the margin*/
     justify-content: space-around;
     align-items: center;
@@ -23,9 +22,7 @@
 }
  /* These are the boxes inside the navbar */
 .flex-container > div {
-    background-color: #DCE0D9;
     margin: 0px 22px;         /* To adjust the spacing */
-    transition: background-color 0.3s ease, transform 0.3s ease; /*So it could be smooth when hovering*/
 }
     /*the links inside the navbar*/
     .flex-container a {
@@ -35,7 +32,8 @@
     font-size: 18px;
     padding: 8px 14px;
     border-radius: 8px; /* to make the border more round */
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;/*So it could be smooth when hovering*/
+}
 }
   .flex-container a:hover {
      background-color: #4A3F36;  /* rich brown from image shadows */
