@@ -148,13 +148,7 @@ footer {
   .Cultural-more {
     width: 100%;
   }
-   /* === GENERAL STYLES === */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #2D2424;
-  color: #E0C097;
-}
+   /* === GENERAL STYLES === 
 
 /* HEADER & FOOTER */
 header, footer {
