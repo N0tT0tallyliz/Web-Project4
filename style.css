@@ -17,10 +17,18 @@ body which is clear and ideal for the body.. To add this together i did the rubi
              position:fixed;
             top: 0;
             width: 100%;
+            box-sizing:border-box;
             z-index: 1000;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
         }
-
+          * {
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  overflow-x: hidden;
+}
         .nav-links {
             display: flex;
             gap: 16px;
