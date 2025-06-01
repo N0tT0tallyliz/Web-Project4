@@ -105,7 +105,7 @@ html, body {
     text-transform: uppercase;
     font-size: 80px;
     color: white;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);i used roboto for the body 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     margin: 0;
 }
  .animate{
@@ -155,15 +155,7 @@ footer {
   .nawiihaha {
     font-size: 40px;
   }
-  .flex-container {
-    flex-direction: column;
   }
-}
-  .Cultural-more {
-    width: 100%;
-  }
-   /* === GENERAL STYLES === 
-
 /* HEADER & FOOTER */
 header, footer {
   text-align: center;
@@ -174,29 +166,6 @@ header, footer {
 footer p {
   margin: 5px 0;
 }
-
-/* === NAVIGATION GRID === */
-.nav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-  justify-items: center;
-  background-color: #5C3D2E;
-  padding: 10px;
-}
-
-.nav-grid a {
-  text-decoration: none;
-  color: #E0C097;
-  background-color: #B85C38;
-  padding: 10px 15px;
-  border-radius: 8px;
-}
-
-.nav-grid a:hover {
-  background-color: #854836;
-}
-
 /* === PAGE TITLE === */
 .contact-title {
   padding: 30px 20px;
