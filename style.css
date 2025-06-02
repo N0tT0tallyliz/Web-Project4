@@ -94,7 +94,7 @@ html, body {
 /*This is for the big title at the center i used some flexbox properties */
 .main-title {
     position: relative;
-    height: 60vh;
+    height: 70vh;
     background: url("Images/nawiii plan img.png") no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -122,7 +122,7 @@ html, body {
   }
  .container {
       padding: 30px;
-      background-color: brown;
+      background-color: #84AE92;
       margin: 30px;
       border-radius: 12px;
     }
