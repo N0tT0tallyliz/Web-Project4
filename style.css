@@ -156,8 +156,7 @@ footer {
     font-size: 40px;
   }
   }
-/* HEADER & FOOTER */
-header, footer {
+ footer {
   text-align: center;
   padding: 20px;
   background-color: #5C3D2E;
