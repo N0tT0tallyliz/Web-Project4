@@ -120,6 +120,14 @@ html, body {
     transform: translateY(0);
   }
   }
+      .about {
+   width: 100%;             /* Full width */
+   height: auto;            /* Maintain aspect ratio */
+   display: block;          /* Remove inline spacing */
+   margin: 40px 0;          /* Space above and below */
+   border-radius: 0px;      /* No corner rounding */
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
  .container {
       padding: 30px;
       background-color: #84AE92;
