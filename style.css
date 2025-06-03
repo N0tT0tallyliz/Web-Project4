@@ -5,7 +5,7 @@ body which is clear and ideal for the body.. To add this together i did the rubi
   font-family: 'Rubik Mono One', sans-serif;
 }
    body, p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; background-color:#84AE92;;
 }
   /*I wanted to use flexbox to do the nav bar and i used some of the properties of flexbox like justify content and more*/
 .flex-container {
@@ -125,7 +125,7 @@ html, body {
 /* cointainer style,used for boxes like "Who We Are,*/
  .container {
       padding: 30px;
-      background-color: #84AE92;
+      background-color: #5A7C8A;
       margin: 30px;
       border-radius: 12px;
     }
@@ -149,8 +149,8 @@ html, body {
             border-radius: 12px;
         }
 footer {
-  background-color: #854836;
-  color: white;
+  background-color:#5a7c8a;
+  color: black;
   text-align: center;
   padding: 20px;
   margin-top: 50px;
@@ -160,13 +160,6 @@ footer {
     font-size: 40px;
   }
   }
- footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #5C3D2E;
-}
-footer p {
-  margin: 5px 0;
 }
 /* PAGE TITLE  */
 .contact-title {
