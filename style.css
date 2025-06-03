@@ -24,11 +24,13 @@ body which is clear and ideal for the body.. To add this together i did the rubi
           body{
              padding-top: 60px;
           }
+      /* Put it in all elements so padding/border don't increase element size */
      * {
           box-sizing: border-box;
             margin: 0;
           padding: 0;
           }
+   /* Hiding the scrollbar for the elements overflowing */
 html, body {
   overflow-x: hidden;
 }
@@ -36,7 +38,7 @@ html, body {
             display: flex;
             gap: 16px;
         }
-
+        /* Style all nav links inside the navigation ba*/
         .nav-links a {
             text-decoration: none;
             color: #84AE92;
@@ -46,7 +48,7 @@ html, body {
             border-radius: 8px;
             transition: all 0.3s ease;
         }
-
+         /*Adds underline effect on hover*/
         .nav-links a:hover {
             background-color: #4A3F36;
             color: #FFFFFF;
@@ -84,10 +86,6 @@ html, body {
         .nav-extras button:hover {
             background-color:#84AE92;
         }
-        .cultural-hero {
-            background: linear-gradient(rgba(46, 82, 102, 0.8), rgba(0, 0, 0, 0.8)), 
-                        url('Images/culture.jpg') center/cover no-repeat;
-            padding-top: 80px;
         }
         /* BODY */
                /*The body has a background of nawii oodena */
@@ -100,6 +98,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+/*THe class for my main title designs*/
 .nawiihaha {
     letter-spacing: 2px;           
     text-transform: uppercase;
@@ -108,6 +107,7 @@ html, body {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     margin: 0;
 }
+/*My animation*/
  .animate{
   opacity: 0;
   transform: translateY(40px);
@@ -120,24 +120,27 @@ html, body {
     transform: translateY(0);
   }
   }
-      .about {
-   width: 100%;             /* Full width */
-   height: auto;            /* Maintain aspect ratio */
-   display: block;          /* Remove inline spacing */
-   margin: 40px 0;          /* Space above and below */
-   border-radius: 0px;      /* No corner rounding */
-   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+ .about {
+   width: 50%;             /* Full width */
+   height: auto;          
+   display: block;          /* Remove inline space */
+   margin: 40px 0;       
+   border-radius: 0px;      
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+/* cointainer style,used for boxes like "Who We Are,*/
  .container {
       padding: 30px;
       background-color: #84AE92;
       margin: 30px;
       border-radius: 12px;
     }
+   /*aligns the video section and adds spacing above */
     .video-container {
       text-align: center;
       margin-top: 20px;
     }
+/*heading style for the intro  */
 .intro h2 {
   color: #854836;
   text-align: center;
@@ -147,7 +150,7 @@ html, body {
         .eagle {
             display: block;
             margin: 20px auto;
-            max-width: 200px;
+            max-width: 50px;
             border: 4px solid #347928;
             border-radius: 12px;
         }
@@ -172,12 +175,12 @@ footer {
 footer p {
   margin: 5px 0;
 }
-/* === PAGE TITLE === */
+/* PAGE TITLE  */
 .contact-title {
   padding: 30px 20px;
   text-align: center;
 }
-
+/* Contact page title styling */
 .contact-title h1 {
   font-size: 2em;
   margin-bottom: 5px;
@@ -187,7 +190,7 @@ footer p {
   font-style: italic;
 }
 
-/* === GRID CONTAINER FOR CONTACT === */
+/*  GRID CONTAINER FOR CONTACT  */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -199,7 +202,7 @@ footer p {
   border-radius: 16px;
 }
 
-/* === LEFT CONTACT INFO BOX === */
+/* LEFT CONTACT INFO BOX  */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -208,25 +211,25 @@ footer p {
 }
 
 .contact-info h2 {
-  color: #E0C097;
+  color:#FFFFFF ;
 }
 
 .contact-info p {
   margin-bottom: 10px;
 }
 
-/* === FORM STYLING === */
+/*  FORM STYLING */
 form {
   display: grid;
   gap: 15px;
 }
-
+/* The label styling */
 label {
   display: block;
   margin-bottom: 5px;
-  color: #E0C097;
+  color: #FFFFFF;
 }
-
+/*/Input style*/
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -234,7 +237,7 @@ input, textarea {
   border-radius: 6px;
   font-size: 1em;
 }
-
+/**/
 textarea {
   resize: vertical;
   min-height: 100px;
@@ -242,19 +245,19 @@ textarea {
 
 button {
   background-color: #B85C38;
-  color: #E0C097;
+  color: #FFFFFF;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   font-size: 1em;
   cursor: pointer;
 }
-
+/* A color shift for the hover*/
 button:hover {
   background-color: #854836;
 }
 
-/* === MOBILE RESPONSIVE === */
+/*To make it more accesible and has a good layout for mobile phones{Learned in Ws3 Schools}*/
 @media (max-width: 700px) {
   .contact-grid {
     grid-template-columns: 1fr;
