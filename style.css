@@ -53,27 +53,23 @@ html, body {
             background-color: #4A3F36;
             color: #FFFFFF;
         }
-
         .nav-extras {
             display: flex;
             align-items: center;
             gap: 14px;
         }
-
         .nav-extras input[type="text"] {
             padding: 6px 10px;
             border-radius: 6px;
             border: none;
             font-size: 14px;
         }
-
         .nav-extras input[type="email"] {
             padding: 6px 10px;
             border-radius: 6px;
             border: none;
             font-size: 14px;
         }
-
         .nav-extras button {
             background-color: #347928;
             color: white;
@@ -82,7 +78,6 @@ html, body {
             border-radius: 6px;
             cursor: pointer;
         }
-
         .nav-extras button:hover {
             background-color:#84AE92;
         }
@@ -236,12 +231,11 @@ input, textarea {
   border-radius: 6px;
   font-size: 1em;
 }
-/**/
+/* Style for the textarea*/
 textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 100px;/*I am setting it so the text wouldn't pass content box*/
 }
-
 button {
   background-color: #B85C38;
   color: #FFFFFF;
@@ -255,10 +249,10 @@ button {
 button:hover {
   background-color: #854836;
 }
-
 /*To make it more accesible and has a good layout for mobile phones{Learned in Ws3 Schools}*/
 @media (max-width: 700px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
 }
+-
