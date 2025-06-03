@@ -221,7 +221,7 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #FFFFFF;
+  color: ##5a7c8a;
 }
 /*/Input style*/
 input, textarea {
@@ -237,7 +237,7 @@ textarea {
   min-height: 100px;/*I am setting it so the text wouldn't pass content box*/
 }
 button {
-  background-color: #B85C38;
+  background-color:#5a7c8a;
   color: #FFFFFF;
   padding: 10px 20px;
   border: none;
