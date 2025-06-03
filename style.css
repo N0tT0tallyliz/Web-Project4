@@ -147,7 +147,7 @@ html, body {
   font-size: 2rem;
 }
         /* Style for eagle image */
-        .eagle {
+        .eagle-image {
             display: block;
             margin: 20px auto;
             max-width: 50px;
