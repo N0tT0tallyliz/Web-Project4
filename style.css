@@ -144,7 +144,7 @@ html, body {
         .eagle-image {
             display: block;
             margin: 20px auto;
-            max-width: 50px;
+            max-width: 100px;
             border: 4px solid #347928;
             border-radius: 12px;
         }
@@ -165,7 +165,6 @@ footer {
   padding: 20px;
   background-color: #5C3D2E;
 }
-
 footer p {
   margin: 5px 0;
 }
@@ -223,7 +222,7 @@ label {
   margin-bottom: 5px;
   color: ##5a7c8a;
 }
-/*/Input style*/
+/*Input style*/
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -255,4 +254,3 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
--
